@@ -13,7 +13,7 @@ const InfoOne = () => {
           live with.
         </p>
         <h2 className="info-headertwo-one">
-            Come Experience Paradise
+            Come Experience Paradise.
         </h2>
       </div>
     </div>
