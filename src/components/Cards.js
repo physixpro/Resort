@@ -5,20 +5,19 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-
-
+import './cards.css'
 
 const SimpleCard = () => {
   const useStyles = makeStyles({
     root: {
-      backgroundColor:"orange",
-
-      width: 200,
+      backgroundColor: "orange",
+      height: 400,
+      width: 525,
     },
     bullet: {
-      display: 'inline-block',
-      margin: '0 2px',
-      transform: 'scale(0.8)',
+      display: "inline-block",
+      margin: "0 2px",
+      transform: "scale(0.8)",
     },
     title: {
       fontSize: 14,
@@ -29,36 +28,91 @@ const SimpleCard = () => {
   });
 
   const classes = useStyles();
-  console.log()
+  console.log();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div style={{justifyContent:"center",display: "flex"}}>
-    <Card className={classes.root} variant="outlined" >
-      <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
-        <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
-        </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
-        <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card></div>)
+    <div>
+      <Card className={classes.root} variant="outlined">
+        <CardContent>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Word of the Day
+          </Typography>
+          <Typography variant="h5" component="h2">
+            be{bull}nev{bull}o{bull}lent
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            adjective
+          </Typography>
+          <Typography variant="body2" component="p">
+            well meaning and kindly.
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
+      {/* <Card className={classes.root} variant="outlined">
+        <CardContent>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Word of the Day
+          </Typography>
+          <Typography variant="h5" component="h2">
+            be{bull}nev{bull}o{bull}lent
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            adjective
+          </Typography>
+          <Typography variant="body2" component="p">
+            well meaning and kindly.
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card>
+      <Card className={classes.root} variant="outlined">
+        <CardContent>
+          <Typography
+            className={classes.title}
+            color="textSecondary"
+            gutterBottom
+          >
+            Word of the Day
+          </Typography>
+          <Typography variant="h5" component="h2">
+            be{bull}nev{bull}o{bull}lent
+          </Typography>
+          <Typography className={classes.pos} color="textSecondary">
+            adjective
+          </Typography>
+          <Typography variant="body2" component="p">
+            well meaning and kindly.
+            <br />
+            {'"a benevolent smile"'}
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>
+      </Card> */}
+    </div>
+  );
 };
 
 const Cards = () => {
-
   const useStyles = makeStyles({
     root: {
       minWidth: 275,
@@ -76,6 +130,15 @@ const Cards = () => {
     },
   });
 
-  return <><SimpleCard/></>;
+  return (
+  <div className="card-container">
+<SimpleCard />
+<SimpleCard />
+<SimpleCard />
+  </div>
+  
+     
+   
+  );
 };
 export default Cards;
