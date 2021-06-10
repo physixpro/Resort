@@ -5,7 +5,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import './cards.css'
+import "./cards.css";
 
 const SimpleCard = () => {
   const useStyles = makeStyles({
@@ -32,83 +32,37 @@ const SimpleCard = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
-    <div>
+    <div className="card-container">
+
       <Card className={classes.root} variant="outlined">
-        <CardContent>
-          <Typography
-            className={classes.title}
-            color="textSecondary"
-            gutterBottom
-          >
-            Word of the Day
-          </Typography>
-          <Typography variant="h5" component="h2">
-            be{bull}nev{bull}o{bull}lent
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            adjective
-          </Typography>
-          <Typography variant="body2" component="p">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions>
+        <img
+          src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
+          alt=""
+          width="525"
+          height="400"
+        />
       </Card>
-      {/* <Card className={classes.root} variant="outlined">
-        <CardContent>
-          <Typography
-            className={classes.title}
-            color="textSecondary"
-            gutterBottom
-          >
-            Word of the Day
-          </Typography>
-          <Typography variant="h5" component="h2">
-            be{bull}nev{bull}o{bull}lent
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            adjective
-          </Typography>
-          <Typography variant="body2" component="p">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions>
-      </Card>
-      <Card className={classes.root} variant="outlined">
-        <CardContent>
-          <Typography
-            className={classes.title}
-            color="textSecondary"
-            gutterBottom
-          >
-            Word of the Day
-          </Typography>
-          <Typography variant="h5" component="h2">
-            be{bull}nev{bull}o{bull}lent
-          </Typography>
-          <Typography className={classes.pos} color="textSecondary">
-            adjective
-          </Typography>
-          <Typography variant="body2" component="p">
-            well meaning and kindly.
-            <br />
-            {'"a benevolent smile"'}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Learn More</Button>
-        </CardActions>
-      </Card> */}
+     
+        <Card className={classes.root} variant="outlined">
+          <img
+            src="https://sharp-wescoff-20e282.netlify.app/static/media/aTwo.4fad255a.jpg"
+            alt=""
+            width="525"
+            height="400"
+          />
+        </Card>
+    
+        <Card className={classes.root} variant="outlined">
+          <img
+            src="https://sharp-wescoff-20e282.netlify.app/static/media/aThree.005f5082.jpg"
+            alt=""
+            width="525"
+            height="400"
+          />
+        </Card>
+    
     </div>
+   
   );
 };
 
@@ -131,14 +85,9 @@ const Cards = () => {
   });
 
   return (
-  <div className="card-container">
-<SimpleCard />
-<SimpleCard />
-<SimpleCard />
-  </div>
-  
-     
-   
+    <div >
+      <SimpleCard />
+    </div>
   );
 };
 export default Cards;
