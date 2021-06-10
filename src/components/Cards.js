@@ -29,6 +29,7 @@ const SimpleCard = () => {
   });
 
   const classes = useStyles();
+  console.log()
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
