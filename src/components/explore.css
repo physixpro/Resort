@@ -19,8 +19,8 @@ grid-gap: 3px;
     grid-area: boxTwo;
     /* border: 2px solid rgb(18, 49, 75); */
     border-radius: 10px;
-    height: 426px;
-    width: 640px;
+    /* height: 426px;
+    width: 640px; */
 }
 
 #box-2-img{
@@ -34,9 +34,13 @@ grid-gap: 3px;
     border-radius: 10px;
 }
 #box-4{
-    background-color: green;
+    background-color: none;
     grid-area: boxFour;
-    border: 2px solid rgb(18, 49, 75);
+    /* border: 2px solid rgb(18, 49, 75); */
+    border-radius: 10px;
+}
+
+#box-4-img{
     border-radius: 10px;
 }
 #box-5{

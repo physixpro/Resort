@@ -9,7 +9,8 @@ const Explore = () => {
         Cater To You.
       </div>
       <div id="box-2">
-        <img id="box-2-img"
+        <img
+          id="box-2-img"
           src="https://sharp-wescoff-20e282.netlify.app/static/media/second.22f56107.jpg"
           alt=""
         />
@@ -18,7 +19,13 @@ const Explore = () => {
         World Class Yoga and Pilates Instruction Taught By Jessica Chen, Awarded
         America's Most Popular pt
       </div>
-      <div id="box-4">4</div>
+      <div id="box-4">
+        <img
+          id="box-4-img"
+          src="https://sharp-wescoff-20e282.netlify.app/static/media/comfort.7e671fc7.jpg"
+          alt=""
+        />
+      </div>
       <div id="box-5">5</div>
     </div>
   );
