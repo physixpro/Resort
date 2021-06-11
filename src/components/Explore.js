@@ -17,7 +17,8 @@ const Explore = () => {
       </div>
       <div id="box-3">
         World Class Yoga and Pilates Instruction Taught By Jessica Chen, Awarded
-        America's Most Popular pt
+        America's Most Popular personal trainer of the year - "Sports Rush
+        Magazine, 2020"
       </div>
       <div id="box-4">
         <img
