@@ -4,6 +4,7 @@ import Video from "./components/Video";
 import InfoOne from "./components/InfoOne";
 import Cards from "./components/Cards";
 import About from "./components/About";
+import Explore from "./components/Explore";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
      <InfoOne />
      <Cards />
      <About />
+     <Explore />
     </div>
   );
 }

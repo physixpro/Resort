@@ -5,7 +5,7 @@ import './video.css'
 const Video = () => {
     return (
         <div className="video-container">
-<video autoPlay loop src="http://localhost:3000/static/media/resort.56b2a634.mp4" type="video/mp4" />
+<video  autoplay loop src="https://sharp-wescoff-20e282.netlify.app/static/media/sample.02306e4b.mp4" type="video/mp4" />
         </div>
         
     )
