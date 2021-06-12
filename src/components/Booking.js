@@ -1,47 +1,69 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
+import { makeStyles } from "@material-ui/core/styles";
+import TextField from "@material-ui/core/TextField";
+import "./booking.css";
 
+const useStyles = makeStyles((theme) => ({
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: 200,
+  },
+}));
 
- 
-    const useStyles = makeStyles((theme) => ({
-        container: {
-          display: 'flex',
-          flexWrap: 'wrap',
-        },
-        textField: {
-          marginLeft: theme.spacing(1),
-          marginRight: theme.spacing(1),
-          width: 200,
-        },
-      }));
-      
-      export default function DatePickers() {
-        const classes = useStyles();
-
+export default function DatePickers() {
+  const classes = useStyles();
 
   return (
-      <div>
-
-     
+    <div className="booking-container">
       <h1 className="booking-header">
-We Would Like To Know A Little Bit
-About Your Vacation
+        We Would Like To Know A Little Bit About Your Vacation
       </h1>
-    <form className={classes.container} noValidate>
-    <TextField
-      id="date"
-      label="Dates"
-      type="date"
-      defaultValue="2017-05-24"
-      className={classes.textField}
-      InputLabelProps={{
-        shrink: true,
-      }}
-    />
-  </form>
-  </div>
-  );
-};
 
-// export default Booking;
+      <form className={classes.container} noValidate>
+        <TextField
+          id="date"
+          label="Check In"
+          type="date"
+          defaultValue="2017-05-24"
+          className={classes.textField}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
+        <TextField
+          id="date"
+          label="Check Out"
+          type="date"
+          defaultValue="2017-05-24"
+          className={classes.textField}
+          InputLabelProps={{
+            shrink: true,
+          }}
+        />
+
+        <input
+          id="booking-room"
+          type="text"
+          label="name"
+          placeholder="1 Room: 1 Adult/Room"
+        />
+        <button id="booking-button">VIEW RATES</button>
+      </form>
+      <p className="travel-warning">
+        Customers should review government guidance to confirm eligibility to
+        travel & stay at hotel. See travelguidance.marriott.com.
+      </p>
+
+      <p>
+        
+        The health and safety of our guests is our top priority: COVID-19
+        updates and what to expect at our hotel.
+      </p>
+    </div>
+  );
+}
