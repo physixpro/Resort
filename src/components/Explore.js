@@ -1,5 +1,6 @@
 import React from "react";
 import "./explore.css";
+import fish from "../images/fish.jpg"
 
 const Explore = () => {
   return (
@@ -27,7 +28,12 @@ const Explore = () => {
           alt=""
         />
       </div>
-      <div id="box-5">5</div>
+      <div id="box-5">
+        <img id="box-5-img"
+          src={fish}
+          alt=""
+        />
+      </div>
     </div>
   );
 };

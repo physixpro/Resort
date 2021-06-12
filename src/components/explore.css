@@ -8,7 +8,7 @@ height: 93vh;
 grid-template-areas:
 "boxOne boxTwo sidebar"
 "boxThree boxFour sidebar";
-grid-gap: 3px;
+grid-gap: 35px;
 }
 
 #box-1{
@@ -28,6 +28,7 @@ grid-gap: 3px;
     border-radius: 10px;
     /* height: 426px;
     width: 640px; */
+    cursor: pointer;
 }
 
 #box-2-img{
@@ -49,14 +50,42 @@ grid-gap: 3px;
     grid-area: boxFour;
     /* border: 2px solid rgb(18, 49, 75); */
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #box-4-img{
     border-radius: 10px;
 }
 #box-5{
-    background-color: yellow;
+    background-color: none;
     grid-area: sidebar;
-    border: 2px solid rgb(18, 49, 75);
+    /* border: 2px solid rgb(18, 49, 75);
+    border-radius: 10px; */
+    cursor: pointer;
+}
+
+#box-5-img{
+    max-height: fit-content;
     border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px){
+    #box-5{
+        display:none;
+    } 
+    #box-1{
+        display: none;
+    }
+    #box-3{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    #box-1{
+        display: none;
+    }
+    #box-3{
+        display: none;
+    }
 }

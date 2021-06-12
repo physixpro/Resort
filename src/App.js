@@ -5,6 +5,7 @@ import InfoOne from "./components/InfoOne";
 import Cards from "./components/Cards";
 import About from "./components/About";
 import Explore from "./components/Explore";
+import Booking from "./components/Booking";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
      <Cards />
      <About />
      <Explore />
+     <Booking />
     </div>
   );
 }
