@@ -54,16 +54,18 @@ export default function DatePickers() {
         />
         <button id="booking-button">VIEW RATES</button>
       </form>
+      
       <p className="travel-warning">
         Customers should review government guidance to confirm eligibility to
         travel & stay at hotel. See travelguidance.marriott.com.
       </p>
 
+     
       <p>
-        
         The health and safety of our guests is our top priority: COVID-19
         updates and what to expect at our hotel.
       </p>
+      
     </div>
   );
 }
