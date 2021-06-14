@@ -6,6 +6,7 @@ import Cards from "./components/Cards";
 import About from "./components/About";
 import Explore from "./components/Explore";
 import Booking from "./components/Booking";
+import SocialMedia from './components/SocialMedia';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
      <About />
      <Explore />
      <Booking />
+     <SocialMedia/>
     </div>
   );
 }

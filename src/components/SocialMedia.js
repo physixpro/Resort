@@ -1,0 +1,13 @@
+import React from 'react';
+import "./socialmedia.css";
+
+const SocialMedia = () => {
+    return (
+        <div>
+            <h3 className="headers" id="social-hub">SOCIAL HUB</h3>
+            <h1 className="headers" id="social-join">JOIN THE CONVERSATION</h1>
+        </div>
+    )
+}
+
+export default SocialMedia
