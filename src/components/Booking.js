@@ -20,11 +20,11 @@ export default function DatePickers() {
 
   return (
     <div className="booking-container">
-      <h1 className="booking-header">
+      <h1 className="headers" id="booking-header">
         We Would Like To Know A Little Bit About Your Vacation
       </h1>
 
-      <form className={classes.container} noValidate>
+      <form className={classes.container} id="booking-form"noValidate>
         <TextField
           id="date"
           label="Check In"
@@ -55,13 +55,13 @@ export default function DatePickers() {
         <button id="booking-button">VIEW RATES</button>
       </form>
       
-      <p className="travel-warning">
+      <p className="travel-warning" id="booking-warning">
         Customers should review government guidance to confirm eligibility to
-        travel & stay at hotel. See travelguidance.marriott.com.
+        travel & stay at hotel. See travelguidance.islaescondida.com.
       </p>
 
      
-      <p>
+      <p className="travel-warning" id="booking-warning">
         The health and safety of our guests is our top priority: COVID-19
         updates and what to expect at our hotel.
       </p>

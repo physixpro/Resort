@@ -4,17 +4,17 @@ const InfoOne = () => {
   return (
     <div>
       <div className="info-container">
-        <h1 className="info-header-one">
+        <h1 className="headers">
           A DELIGHTFULLY FRESH AND UNIQUE EXPERIENCE
         </h1>
-        <p className="info-para-one">
+        <p className="paragraphs">
           Stunning signature dining with breathtaking views of the Caribbean
           Sea. An inegmatic experience to top them all and at prices you can
           live with.
         </p>
-        <h2 className="info-headertwo-one">
+        <h1 className="headers">
             Come Experience Paradise.
-        </h2>
+        </h1>
       </div>
     </div>
   );

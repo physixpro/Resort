@@ -1,10 +1,11 @@
 import React from "react";
+import "./about.css";
 
 const About = () => {
   return (
     <div>
-      <h1>YOUR STAY</h1>
-      <p>
+      <h1 className="headers">YOUR STAY</h1>
+      <p className="paragraphs">
         Stunningly appointed and supremely luxurious, our bright, spacious and
         inspiring rooms and suits reflect a refined feeling of elegant yet
         comfortable coastal design. Complemented by premium bedding and linens,
