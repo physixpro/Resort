@@ -7,6 +7,7 @@ import About from "./components/About";
 import Explore from "./components/Explore";
 import Booking from "./components/Booking";
 import SocialMedia from './components/SocialMedia';
+import SimpleSlider from "./components/SimpleSlider";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
      <Explore />
      <Booking />
      <SocialMedia/>
+     <SimpleSlider/>
     </div>
   );
 }
