@@ -28,3 +28,7 @@
       display: none;
     }
   }
+
+  .MuiTabs-flexContainer{
+    background-color: rgb(60, 189, 206);
+  }

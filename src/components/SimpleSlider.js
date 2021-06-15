@@ -2,7 +2,11 @@ import React, {Component} from 'react';
 import Slider from "react-slick";
 import "./simpleslider.css";
 import sunset from "../images/sunset.jpg";
-import cottage from "../images/cottage.jpg"
+import cottage from "../images/cottage.jpg";
+import coconut from "../images/coconut.jpg";
+import relax from "../images/relax.jpg";
+import spa from "../images/spa.jpg";
+import wedding from "../images/wedding.jpg";
 
 
 
@@ -12,30 +16,43 @@ export default class SimpleSlider extends Component {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1
       };
       return (
-        <div>
-          <h2> Single Item</h2>
+        <div className="slider-container">
+          
           <Slider {...settings}>
             <div>
-              <h3> <img className="slider-image"src={sunset} alt="" /> </h3>
+               <img className="slider-image"src={sunset} alt="" /> 
+<h3 className="slide-box">JAN 6th Complete serenity in the heart of Destiny</h3>
+<h3>#islaescondida #privatebeach #destinyisland</h3>
+
             </div>
             <div>
-              <h3> <img className="slider-image"src={cottage} alt="" /></h3>
+               <img className="slider-image"src={cottage} alt="" / >
+               <h3>JAN 12th Hide yourself on crystal clear creation</h3>
+<h3>#islaescondida #privatehuts #clearwaters</h3>
+</div>
+            <div>
+              <img className="slider-image"src={coconut} alt="" />
+              <h3>JAN 16th We carry no processed foods on our premises</h3>
+<h3>#escondida #organicescondida #hiddenisland</h3>
             </div>
             <div>
-              <h3>3</h3>
+             <img className="slider-image"src={spa} alt="" />
+             <h3>FEB 6th Relax indoors or outdoors with world class spas</h3>
+<h3>#islaescondida #escondidaspas #escondidamassage</h3>
             </div>
             <div>
-              <h3>4</h3>
+              <img className="slider-image"src={wedding} alt="" />
+              <h3>FEB 9th Monthly major wedding, all island members are invited</h3>
+<h3>#escondidawedding #exclusivewedding #marriedonescondida</h3>
             </div>
             <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
+              <img className="slider-image"src={relax} alt="" />
+              <h3>FEB 19th Deep Jungle tour</h3>
+<h3>#islaescondida #islajungle #escondidajungle</h3>
             </div>
           </Slider>
         </div>
