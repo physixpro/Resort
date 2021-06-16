@@ -10,7 +10,7 @@ const FooterFinal = () => {
       </div>
       
 {/* Box Two that is positioned at the center of the page */}
-      <div className="flex-lists">
+      <a href="" className="flex-lists">
         <ul className="footer-list">
           <li>ABOUT US</li>
           <li>DIRECTION</li>
@@ -23,7 +23,7 @@ const FooterFinal = () => {
           <li>GIFT CARDS</li>
           <li>PRIVACY POLICY</li>
         </ul>
-      </div>
+      </a>
       {/*Box three that is position at the right of the page */}
 <div className="email-box">
   Send us a message!

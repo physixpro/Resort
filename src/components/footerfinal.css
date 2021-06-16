@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.flex-lists{
+a.flex-lists{
     display: flex;
     border: 3px solid rgb(0, 0, 0);
     font-size: 12px;
@@ -24,7 +24,10 @@
    border-bottom-width: 0;
    border-top-width: 0;
    border-right-width: 0;
+   position: relative;
+   color:black;
 }
+
 
 
 .email-box{
@@ -38,6 +41,3 @@
    border-right-width: 0;
 }
 
-li{
-    cursor: pointer;
-}
