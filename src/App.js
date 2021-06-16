@@ -8,6 +8,8 @@ import Explore from "./components/Explore";
 import Booking from "./components/Booking";
 import SocialMedia from './components/SocialMedia';
 import SimpleSlider from "./components/SimpleSlider";
+import Footer from "./components/Footer";
+import FooterFinal from "./components/FooterFinal";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
      <Booking />
      <SocialMedia/>
      <SimpleSlider/>
+     <Footer />
+    <FooterFinal />
     </div>
   );
 }
