@@ -6,7 +6,7 @@ const FooterFinal = () => {
     <div className="footer-container">
       {/* Box One that is positioned at the left of the page */}
       <div className="section">
-        200 PALENCIA RESORT WAY BUCARA, INDO (855) 741-2777
+        200 PALENCIA <br /> RESORT WAY <br /> BUCARA, INDO <br /> (855) 741-2777
       </div>
       
 {/* Box Two that is positioned at the center of the page */}
