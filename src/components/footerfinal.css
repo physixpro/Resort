@@ -33,4 +33,7 @@
     position: relative;
     right:100px;
     padding-left: 100px;
+    border-bottom-width: 0;
+   border-top-width: 0;
+   border-right-width: 0;
 }
