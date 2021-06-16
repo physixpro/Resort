@@ -26,7 +26,7 @@ const FooterFinal = () => {
       </div>
       {/*Box three that is position at the right of the page */}
 <div className="email-box">
-  EMAIL SIGN UP
+  Send us a message!
 </div>
     </div>
   );
