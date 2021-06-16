@@ -18,7 +18,7 @@ const FooterFinal = () => {
           <li>LOVE LOCALS</li>
         </ul>
         <ul className="footer-list">
-          <li>NEWS AND AWARDS</li>
+          <li >NEWS AND AWARDS</li>
           <li>CAREERS</li>
           <li>GIFT CARDS</li>
           <li>PRIVACY POLICY</li>

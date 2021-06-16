@@ -37,3 +37,7 @@
    border-top-width: 0;
    border-right-width: 0;
 }
+
+li{
+    cursor: pointer;
+}
