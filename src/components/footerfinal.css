@@ -12,6 +12,8 @@
     font-size: 0.83em;
     font-weight: bold;
     text-align: left;
+    left: 80px;
+    position: relative;
 }
 
 .flex-lists{
@@ -19,10 +21,13 @@
     border: 3px solid green;
     font-size: 12px;
     line-height: 30px;
+   padding-left: 180px;
+   
 }
 
 
 .email-box{
     /* text-align: right; */
     border: 3px solid blue;
+    
 }
