@@ -21,7 +21,9 @@
     font-size: 12px;
     line-height: 30px;
    padding-left: 180px;
-   
+   border-bottom-width: 0;
+   border-top-width: 0;
+   border-right-width: 0;
 }
 
 
