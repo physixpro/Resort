@@ -1,0 +1,21 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-footers{
+    /* display: flex; */
+    /* justify-content: center; */
+    border: 3px solid green;
+}
+
+.section{
+    /* text-align: left; */
+    border: 3px solid red;
+}
+
+
+.email-box{
+    /* text-align: right; */
+    border: 3px solid blue;
+}

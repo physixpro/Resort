@@ -1,25 +1,33 @@
 import React from "react";
+import "./footerfinal.css";
 
 const FooterFinal = () => {
   return (
-    <div footer-container>
-      <p className="section">
+    <div className="footer-container">
+      {/* Box One that is positioned at the left of the page */}
+      <div className="section">
         200 PALENCIA RESORT WAY BUCARA, INDO (855) 741-2777
-        </p>
-        <div className="footer-line"></div>
-        <ol className="footer-list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-        <ol className="footer-list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-   
+      </div>
+      
+{/* Box Two that is positioned at the center of the page */}
+      <div className="flex-footers">
+        <ul className="footer-list">
+          <li>ABOUT US</li>
+          <li>DIRECTION</li>
+          <li>CONTACT</li>
+          <li>LOVE LOCALS</li>
+        </ul>
+        <ul className="footer-list">
+          <li>NEWS AND AWARDS</li>
+          <li>CAREERS</li>
+          <li>GIFT CARDS</li>
+          <li>PRIVACY POLICY</li>
+        </ul>
+      </div>
+      {/*Box three that is position at the right of the page */}
+<div className="email-box">
+  EMAIL SIGN UP
+</div>
     </div>
   );
 };
