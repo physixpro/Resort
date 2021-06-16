@@ -29,5 +29,7 @@
 .email-box{
     /* text-align: right; */
     border: 3px solid blue;
-    
+    position: relative;
+    right:100px;
+    padding-left: 100px;
 }
