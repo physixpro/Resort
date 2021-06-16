@@ -10,7 +10,7 @@ const FooterFinal = () => {
       </div>
       
 {/* Box Two that is positioned at the center of the page */}
-      <div className="flex-footers">
+      <div className="flex-lists">
         <ul className="footer-list">
           <li>ABOUT US</li>
           <li>DIRECTION</li>

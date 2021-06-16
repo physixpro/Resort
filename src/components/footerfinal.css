@@ -5,9 +5,8 @@
     gap: 15em;
 }
 
-.flex-footers{
-    /* display: flex; */
-    /* justify-content: center; */
+.flex-lists{
+    display: flex;
     border: 3px solid green;
 }
 
