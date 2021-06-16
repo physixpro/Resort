@@ -9,7 +9,7 @@
     /* text-align: left; */
     border: 3px solid red;
     padding-top: 50px;
-    font-size: 12px;
+    font-size: 0.83em;
     font-weight: bold;
     text-align: left;
 }
@@ -17,6 +17,7 @@
 .flex-lists{
     display: flex;
     border: 3px solid green;
+    font-size: 12px;
 }
 
 
