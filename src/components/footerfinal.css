@@ -5,14 +5,17 @@
     gap: 15em;
 }
 
-.flex-lists{
-    display: flex;
-    border: 3px solid green;
-}
-
 .section{
     /* text-align: left; */
     border: 3px solid red;
+    padding-top: 50px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.flex-lists{
+    display: flex;
+    border: 3px solid green;
 }
 
 
