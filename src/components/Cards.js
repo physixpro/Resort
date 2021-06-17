@@ -8,6 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import "./cards.css";
 
 const SimpleCard = () => {
+
+  const [showBlurOne,setShowBlurOne] = useState("")
   const useStyles = makeStyles({
     root: {
       backgroundColor: "orange",
