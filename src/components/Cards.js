@@ -22,17 +22,22 @@ const SimpleCard = () => {
     setShowCardOne(false);
   }
 
-  const showSecondCard=()=>{
-    setShowBlurTwo(true);
-    setShowCardTwo(false);
+  const hideFirstCard = () => {
+    setShowBlurOne(false);
+    setShowCardOne(true);
   }
 
-  const showThirdCard = () => {
-    setShowBlurThree(true);
-    setShowCardThree(false);
-  }
+  // const showSecondCard=()=>{
+  //   setShowBlurTwo(true);
+  //   setShowCardTwo(false);
+  // }
 
-  
+  // const showThirdCard = () => {
+  //   setShowBlurThree(true);
+  //   setShowCardThree(false);
+  // }
+
+
   const useStyles = makeStyles({
     root: {
       backgroundColor: "orange",
@@ -58,7 +63,9 @@ const SimpleCard = () => {
 
   return (
     <div className="card-container">
-      <Card className={classes.root} variant="outlined">
+
+      <Card onMouseOver={() =>  showFirstCard()} onMouseOut={() => hideFirstCard()} setclassName={classes.root} variant="outlined">
+        
         <img
           src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
           alt=""
