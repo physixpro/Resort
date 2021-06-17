@@ -8,10 +8,19 @@ import Typography from "@material-ui/core/Typography";
 import "./cards.css";
 
 const SimpleCard = () => {
-  const [showBlurOne, setShowBlurOne] = useState("");
-  const [showBlurTwo, setShowBlurTwo] = useState("");
-  const [showBlurThree,setShowBlurThree] = useState("");
-  
+  //cards after hover
+  const [showBlurOne, setShowBlurOne] = useState(false);
+  const [showBlurTwo, setShowBlurTwo] = useState(false);
+  const [showBlurThree,setShowBlurThree] = useState(false);
+  // Cards before hover
+  const [showCardOne,setShowCardOne]=useState(true);
+  const [showCardTwo,setShowCardTwo]=useState(true);
+  const [showCardThree,setShowCardThree]=useState(true);
+
+  const showFirstCard = () => {
+    setShowBlurOne(true);
+    setShowCardOne(false);
+  }
   const useStyles = makeStyles({
     root: {
       backgroundColor: "orange",
