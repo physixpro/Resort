@@ -20,11 +20,13 @@ const SimpleCard = () => {
   const showFirstCard = () => {
     setShowBlurOne(true);
     setShowCardOne(false);
+    console.log("Mouse over fired")
   }
 
   const hideFirstCard = () => {
     setShowBlurOne(false);
     setShowCardOne(true);
+    console.log("Mouse out fired")
   }
 
   // const showSecondCard=()=>{
@@ -65,7 +67,7 @@ const SimpleCard = () => {
     <div className="card-container">
 
       <Card onMouseOver={() =>  showFirstCard()} onMouseOut={() => hideFirstCard()} setclassName={classes.root} variant="outlined">
-        
+
         <img
           src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
           alt=""
