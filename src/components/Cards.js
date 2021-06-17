@@ -26,6 +26,13 @@ const SimpleCard = () => {
     setShowBlurTwo(true);
     setShowCardTwo(false);
   }
+
+  const showThirdCard = () => {
+    setShowBlurThree(true);
+    setShowCardThree(false);
+  }
+
+  
   const useStyles = makeStyles({
     root: {
       backgroundColor: "orange",
