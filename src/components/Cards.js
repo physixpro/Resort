@@ -13,23 +13,23 @@ const SimpleCard = () => {
   //cards after hover
   const [showBlurOne, setShowBlurOne] = useState(false);
   const [showBlurTwo, setShowBlurTwo] = useState(false);
-  const [showBlurThree,setShowBlurThree] = useState(false);
+  const [showBlurThree, setShowBlurThree] = useState(false);
   // Cards before hover
-  const [showCardOne,setShowCardOne]=useState(true);
-  const [showCardTwo,setShowCardTwo]=useState(true);
-  const [showCardThree,setShowCardThree]=useState(true);
+  const [showCardOne, setShowCardOne] = useState(true);
+  const [showCardTwo, setShowCardTwo] = useState(true);
+  const [showCardThree, setShowCardThree] = useState(true);
 
   const showFirstCard = () => {
     setShowBlurOne(true);
     setShowCardOne(false);
-    console.log("Mouse over fired")
-  }
+    console.log("Mouse over fired");
+  };
 
   const hideFirstCard = () => {
     setShowBlurOne(false);
     setShowCardOne(true);
-    console.log("Mouse out fired")
-  }
+    console.log("Mouse out fired");
+  };
 
   // const showSecondCard=()=>{
   //   setShowBlurTwo(true);
@@ -40,7 +40,6 @@ const SimpleCard = () => {
   //   setShowBlurThree(true);
   //   setShowCardThree(false);
   // }
-
 
   const useStyles = makeStyles({
     root: {
@@ -67,16 +66,23 @@ const SimpleCard = () => {
 
   return (
     <div className="card-container">
-
-      <Card onMouseOver={() =>  showFirstCard()} onMouseOut={() => hideFirstCard()} setclassName={classes.root} variant="outlined">
-
-        <img
-          src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
-          alt=""
-          width="525"
-          height="400"
-        />
-      </Card>
+      {showCardOne ? (
+        <Card
+          onMouseOver={() => showFirstCard()}
+          onMouseOut={() => hideFirstCard()}
+          setclassName={classes.root}
+          variant="outlined"
+        >
+          <img
+            src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
+            alt=""
+            width="525"
+            height="400"
+          />
+        </Card>
+      ) : (
+        <div>Hello world</div>
+      )}
 
       <Card className={classes.root} variant="outlined">
         <img
