@@ -19,11 +19,11 @@ const SimpleCard = () => {
   const [showCardTwo, setShowCardTwo] = useState(true);
   const [showCardThree, setShowCardThree] = useState(true);
 
-  const showFirstCard = () => {
-    setShowBlurOne(true);
-    setShowCardOne(false);
-    console.log("Mouse over fired");
-  };
+  // const showFirstCard = () => {
+  //   setShowBlurOne(true);
+  //   setShowCardOne(false);
+  //   console.log("Mouse over fired");
+  // };
 
   const hideFirstCard = () => {
     setShowBlurOne(false);
@@ -43,7 +43,7 @@ const SimpleCard = () => {
 
   const useStyles = makeStyles({
     root: {
-      backgroundColor: "orange",
+      backgroundColor: "none",
       height: 400,
       width: 525,
     },
@@ -68,12 +68,12 @@ const SimpleCard = () => {
     <div className="card-container">
       {showCardOne ? (
         <Card
-          onMouseOver={() => showFirstCard()}
+          onMouseOver={() => setShowCardOne(false)}
           onMouseOut={() => hideFirstCard()}
           setclassName={classes.root}
           variant="outlined"
         >
-          <img
+          <img id="firstImage"
             src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
             alt=""
             width="525"
@@ -81,7 +81,7 @@ const SimpleCard = () => {
           />
         </Card>
       ) : (
-        <div>Hello world</div>
+        <img className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
       )}
 
       <Card className={classes.root} variant="outlined">

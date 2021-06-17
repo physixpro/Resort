@@ -39,3 +39,7 @@
           grid-template-columns: 1fr 1fr 1fr;
       }
   } */
+
+  #firstImage{
+      border-radius: 2%;
+  }
