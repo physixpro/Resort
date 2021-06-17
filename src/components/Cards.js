@@ -10,6 +10,8 @@ import "./cards.css";
 const SimpleCard = () => {
   const [showBlurOne, setShowBlurOne] = useState("");
   const [showBlurTwo, setShowBlurTwo] = useState("");
+  const [showBlurThree,setShowBlurThree] = useState("");
+  
   const useStyles = makeStyles({
     root: {
       backgroundColor: "orange",
