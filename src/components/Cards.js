@@ -6,14 +6,15 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import imageOneBlurred from "../images/imageOneBlurred.jpg";
+import imageTwoBlurred from "../images/imageTwoBlurred.jpg";
 
 import "./cards.css";
 
 const SimpleCard = () => {
   //cards after hover
-  const [showBlurOne, setShowBlurOne] = useState(false);
-  const [showBlurTwo, setShowBlurTwo] = useState(false);
-  const [showBlurThree, setShowBlurThree] = useState(false);
+  // const [showBlurOne, setShowBlurOne] = useState(false);
+  // const [showBlurTwo, setShowBlurTwo] = useState(false);
+  // const [showBlurThree, setShowBlurThree] = useState(false);
   // Cards before hover
   const [showCardOne, setShowCardOne] = useState(true);
   const [showCardTwo, setShowCardTwo] = useState(true);
