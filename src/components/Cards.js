@@ -25,11 +25,11 @@ const SimpleCard = () => {
   //   console.log("Mouse over fired");
   // };
 
-  const hideFirstCard = () => {
-    setShowBlurOne(false);
-    setShowCardOne(true);
-    console.log("Mouse out fired");
-  };
+  // const hideFirstCard = () => {
+  //   setShowBlurOne(false);
+  //   setShowCardOne(true);
+  //   console.log("Mouse out fired");
+  // };
 
   // const showSecondCard=()=>{
   //   setShowBlurTwo(true);
@@ -69,7 +69,7 @@ const SimpleCard = () => {
       {showCardOne ? (
         <Card
           onMouseOver={() => setShowCardOne(false)}
-          onMouseOut={() => hideFirstCard()}
+         
           setclassName={classes.root}
           variant="outlined"
         >
@@ -81,7 +81,7 @@ const SimpleCard = () => {
           />
         </Card>
       ) : (
-        <img className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
+        <img   onMouseOut={() => setShowCardOne(true)} className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
       )}
 
       <Card className={classes.root} variant="outlined">
