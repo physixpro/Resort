@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import imageOneBlurred from "../images/imageOneBlurred.jpg";
 import imageTwoBlurred from "../images/imageTwoBlurred.jpg";
-import imageThreeBlurred from "../images/imageThreeBlurred";
+import imageThreeBlurred from "../images/imageThreeBlurred.jpg";
 
 
 import "./cards.css";
@@ -74,16 +74,16 @@ const SimpleCard = () => {
       </Card> ) : ( <img onMouseOut={() => setShowCardTwo(true)}  src={imageTwoBlurred} width="525" height="400" alt="blurTwo"  /> )}
 
  {/***************** Third Card ******************/}
- {setShowThirdCard ? (
-      <Card onMouseOver={ () => setShowThirdCard(false)} className={classes.root} variant="outlined">
-        <img
+ {showCardThree ? (
+      <Card onMouseOver={ () => setShowCardThree(false)} className={classes.root} variant="outlined">
+        <img 
           src="https://sharp-wescoff-20e282.netlify.app/static/media/aThree.005f5082.jpg"
           alt=""
           width="525"
           height="400"
         />
       </Card>
- ) : ( <img src={}  )
+ ) : ( <img onMouseOut={ () => setShowCardThree(true)}src={imageThreeBlurred}  width="525" height="400" alt="blurThree" />)}
     </div>
   );
 };
