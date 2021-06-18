@@ -85,14 +85,15 @@ const SimpleCard = () => {
         <img   onMouseOut={() => setShowCardOne(true)} className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
       )}
 
-      <Card className={classes.root} variant="outlined">
+{showCardTwo ? (
+      <Card onMouseOver={() => setShowCardTwo(false)} className={classes.root} variant="outlined">
         <img
           src="https://sharp-wescoff-20e282.netlify.app/static/media/aTwo.4fad255a.jpg"
           alt=""
           width="525"
           height="400"
         />
-      </Card>
+      </Card> ) : ( <img onMouseOut={() => setShowCardTwo(true)}  src={imageTwoBlurred} width="525" height="400" alt="blurTwo"  /> )}
 
       <Card className={classes.root} variant="outlined">
         <img
