@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -8,17 +8,24 @@ import Typography from "@material-ui/core/Typography";
 import imageOneBlurred from "../images/imageOneBlurred.jpg";
 import imageTwoBlurred from "../images/imageTwoBlurred.jpg";
 import imageThreeBlurred from "../images/imageThreeBlurred.jpg";
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./cards.css";
 
+
 const SimpleCard = () => {
+  
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   
   const [showCardOne, setShowCardOne] = useState(true);
   const [showCardTwo, setShowCardTwo] = useState(true);
   const [showCardThree, setShowCardThree] = useState(true);
 
-
+ 
   const useStyles = makeStyles({
     root: {
       backgroundColor: "none",
@@ -46,13 +53,13 @@ const SimpleCard = () => {
     <div className="card-container">
       {/***************** First Card ******************/}
       {showCardOne ? (
-        <Card
+        <Card data-aos="fade-up"
           onMouseOver={() => setShowCardOne(false)}
          
           setclassName={classes.root}
           variant="outlined"
         >
-          <img id="first-image-clear"
+          <img  data-aos="fade-up" id="first-image-clear"
             src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
             alt=""
             width="525"
@@ -112,4 +119,5 @@ const Cards = () => {
     </div>
   );
 };
+
 export default Cards;
