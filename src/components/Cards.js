@@ -52,7 +52,7 @@ const SimpleCard = () => {
           setclassName={classes.root}
           variant="outlined"
         >
-          <img id="firstImage"
+          <img id="first-image-clear"
             src="https://sharp-wescoff-20e282.netlify.app/static/media/aOne.0b6d81c7.jpg"
             alt=""
             width="525"
@@ -60,7 +60,7 @@ const SimpleCard = () => {
           />
         </Card>
       ) : (
-        <img   onMouseOut={() => setShowCardOne(true)} className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
+        <img className="blurredImages" id="firstImage" onMouseOut={() => setShowCardOne(true)} className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
       )}
  {/***************** Second Card ******************/}
 {showCardTwo ? (
@@ -71,7 +71,7 @@ const SimpleCard = () => {
           width="525"
           height="400"
         />
-      </Card> ) : ( <img onMouseOut={() => setShowCardTwo(true)}  src={imageTwoBlurred} width="525" height="400" alt="blurTwo"  /> )}
+      </Card> ) : ( <img  className="blurredImages" onMouseOut={() => setShowCardTwo(true)}  src={imageTwoBlurred} width="525" height="400" alt="blurTwo"  /> )}
 
  {/***************** Third Card ******************/}
  {showCardThree ? (
@@ -83,7 +83,7 @@ const SimpleCard = () => {
           height="400"
         />
       </Card>
- ) : ( <img onMouseOut={ () => setShowCardThree(true)}src={imageThreeBlurred}  width="525" height="400" alt="blurThree" />)}
+ ) : ( <img  className="blurredImages" onMouseOut={ () => setShowCardThree(true)}src={imageThreeBlurred}  width="525" height="400" alt="blurThree" />)}
     </div>
   );
 };
