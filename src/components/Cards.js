@@ -7,40 +7,17 @@ import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import imageOneBlurred from "../images/imageOneBlurred.jpg";
 import imageTwoBlurred from "../images/imageTwoBlurred.jpg";
+import imageThreeBlurred from "../images/imageThreeBlurred";
+
 
 import "./cards.css";
 
 const SimpleCard = () => {
-  //cards after hover
-  // const [showBlurOne, setShowBlurOne] = useState(false);
-  // const [showBlurTwo, setShowBlurTwo] = useState(false);
-  // const [showBlurThree, setShowBlurThree] = useState(false);
-  // Cards before hover
+  
   const [showCardOne, setShowCardOne] = useState(true);
   const [showCardTwo, setShowCardTwo] = useState(true);
   const [showCardThree, setShowCardThree] = useState(true);
 
-  // const showFirstCard = () => {
-  //   setShowBlurOne(true);
-  //   setShowCardOne(false);
-  //   console.log("Mouse over fired");
-  // };
-
-  // const hideFirstCard = () => {
-  //   setShowBlurOne(false);
-  //   setShowCardOne(true);
-  //   console.log("Mouse out fired");
-  // };
-
-  // const showSecondCard=()=>{
-  //   setShowBlurTwo(true);
-  //   setShowCardTwo(false);
-  // }
-
-  // const showThirdCard = () => {
-  //   setShowBlurThree(true);
-  //   setShowCardThree(false);
-  // }
 
   const useStyles = makeStyles({
     root: {
@@ -67,6 +44,7 @@ const SimpleCard = () => {
 
   return (
     <div className="card-container">
+      {/***************** First Card ******************/}
       {showCardOne ? (
         <Card
           onMouseOver={() => setShowCardOne(false)}
@@ -84,7 +62,7 @@ const SimpleCard = () => {
       ) : (
         <img   onMouseOut={() => setShowCardOne(true)} className="blurredImageOne" src={imageOneBlurred} width="525" height="400" alt="blurOne" />
       )}
-
+ {/***************** Second Card ******************/}
 {showCardTwo ? (
       <Card onMouseOver={() => setShowCardTwo(false)} className={classes.root} variant="outlined">
         <img
@@ -95,7 +73,9 @@ const SimpleCard = () => {
         />
       </Card> ) : ( <img onMouseOut={() => setShowCardTwo(true)}  src={imageTwoBlurred} width="525" height="400" alt="blurTwo"  /> )}
 
-      <Card className={classes.root} variant="outlined">
+ {/***************** Third Card ******************/}
+ {setShowThirdCard ? (
+      <Card onMouseOver={ () => setShowThirdCard(false)} className={classes.root} variant="outlined">
         <img
           src="https://sharp-wescoff-20e282.netlify.app/static/media/aThree.005f5082.jpg"
           alt=""
@@ -103,6 +83,7 @@ const SimpleCard = () => {
           height="400"
         />
       </Card>
+ ) : ( <img src={}  )
     </div>
   );
 };
