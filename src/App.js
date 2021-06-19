@@ -10,10 +10,12 @@ import SocialMedia from './components/SocialMedia';
 import SimpleSlider from "./components/SimpleSlider";
 import Footer from "./components/Footer";
 import FooterFinal from "./components/FooterFinal";
+import Cookie from "./components/Cookie";
 
 function App() {
   return (
     <div className="App">
+      <Cookie />
      <Navbar />
      <Video />
      <InfoOne />
