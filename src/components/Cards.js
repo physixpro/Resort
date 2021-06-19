@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+// import CardActions from "@material-ui/core/CardActions";
+// import CardContent from "@material-ui/core/CardContent";
+// import Button from "@material-ui/core/Button";
+// import Typography from "@material-ui/core/Typography";
 import imageOneBlurred from "../images/imageOneBlurred.jpg";
 import imageTwoBlurred from "../images/imageTwoBlurred.jpg";
 import imageThreeBlurred from "../images/imageThreeBlurred.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./cards.css";
+import "./css/cards.css";
 
 const SimpleCard = () => {
   useEffect(() => {

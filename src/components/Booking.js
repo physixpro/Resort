@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
-import "./booking.css";
+import "./css/booking.css";
 
 const useStyles = makeStyles((theme) => ({
   container: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import resortOne from "../images/resortOne.jpg";
 
-import './video.css'
+import './css/video.css'
 
 const Video = () => {
     return (

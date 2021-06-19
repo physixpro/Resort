@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "./explore.css";
+import "./css/explore.css";
 import fish from "../images/fish.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";

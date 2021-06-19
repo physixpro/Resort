@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Slider from "react-slick";
-import "./simpleslider.css";
+import "./css/simpleslider.css";
 import sunset from "../images/sunset.jpg";
 import cottage from "../images/cottage.jpg";
 import coconut from "../images/coconut.jpg";
