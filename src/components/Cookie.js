@@ -5,7 +5,14 @@ import CookieConsent from "react-cookie-consent";
 const Cookie = () => {
     return (
         <div>
-            <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
+            <CookieConsent
+            location="bottom"
+            buttonText="Yes of course!!"
+            cookieName="myAwesomeCookieName2"
+            style={{ background: "#2B373B" }}
+            buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+            expires={150}>
+                This website uses cookies to enhance the user experience.</CookieConsent>
         </div>
     )
 }
