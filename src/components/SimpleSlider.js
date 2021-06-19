@@ -26,8 +26,11 @@ export default class SimpleSlider extends Component {
           <Slider {...settings}>
             <div>
                <img className="slider-image"src={sunset} alt="" /> 
-<h3 className="slide-box">JAN 6th Complete serenity in the heart of Destiny</h3>
+               <div className="slider-text-box">
+               <h3 className="slide-box">JAN 6th Complete serenity in the heart of Destiny</h3>
 <h3>#islaescondida #privatebeach #destinyisland</h3>
+               </div>
+
 
             </div>
             <div>
