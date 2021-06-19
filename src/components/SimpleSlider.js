@@ -20,7 +20,8 @@ export default class SimpleSlider extends Component {
         slidesToScroll: 1
       };
       return (
-        <div className="slider-container">
+        <div className="slider-container"   data-aos="fade-up"
+        data-aos-duration="2000">
           
           <Slider {...settings}>
             <div>
