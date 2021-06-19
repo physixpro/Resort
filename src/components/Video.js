@@ -8,7 +8,9 @@ const Video = () => {
     return (
         <div className="video-container">
 {/* <video loop autoPlay src={resort} type="video/mp4" /> */}
-<img src={resortOne} alt="" />
+<img src={resortOne} alt="" /> <h1> Isla Escondida</h1>
+
+
         </div>
         
     )
